@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/custom-main.css">
+<link rel="stylesheet" href="css/custom-barousel.css">
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]--> 
+
+<!-- Add your site or application content here -->
+<div class="wrapper">
+    <div id="index-header1" class="barousel">
+        <div class="barousel_image"> 
+            <!-- image 1 --> 
+            <img src="img/main_building.jpg" alt="" class="default" /> 
+            <!-- image 2 --> 
+            <img src="img/reception.jpg" alt="" /> 
+            <!-- image 3 --> 
+            <img src="img/workstations.jpg" alt="" /> </div>
+        <div class="barousel_content"> 
+            <!-- content 1 -->
+            <div class="default">
+                <h3>Market Analysis</h3>
+                <p>The performance of the market is forecast to accelerate, with an anticipated CAGR of 6.9% for the five-year period 2013-2015, which is expected to drive the market to a value of $934 billion by the end of 2015.</p>
+                <h3>Market Value</h3>
+                <p>The XYZ segment was the market's most lucrative in 2010, with total revenue of $222.2 billion, equivalent to 33.2% of the market's overall value. The other XYZ segment contributed revenue of $210.1 billion in 2010, equating to 31.4% of the market's aggregate value. </p>
+            </div>
+            <!-- content 2 -->
+            <div>
+                <h3>Market Segmentation</h3>
+                <p>The US XYZ market grew posting gradually decelerating growth rates, culminating in a steep decline in 2009. The market recovered this year and is expected to display healthy growth over the next five years up to 2015. </p>
+                <h3>Market Outlook</h3>
+                <p>The US XYZ market had total revenue of $670 billion in 2010, representing a compound annual growth rate (CAGR) of 0.1% for the period spanning 2006-2010.</p>
+                <br>
+            </div>
+            <!-- content 3 -->
+            <div>
+                <h3>Five Force Analysis</h3>
+                <p>The XYZ market has been greatly affected by the global economic downturn, however, the prompt recovery and optimistic view for future market's growth should mitigate the rivarly level somewhat. </p>
+            </div>
+        </div>
+        <div class="barousel_nav"> </div>
+        <div class="login-container">
+            <div id="login-button">Login</div>
+            <div id="login-details-inner"><img src="img/right-arrow.png"></div>
+            <div id="login-details">
+                <form name="login-credentials" id="login-credentials">
+                    <label for="uid">Consultant ID:</label>
+                    <input type="text" name="uid" id="uid">
+                    <br>
+                    <label for="cid">Customer ID:</label>
+                    <input type="text" name="cid" id="cid">
+                    <br>
+                    <label for="pwd">Password:</label>
+                    <input type="password" name="pwd" id="pwd">
+                    <br>
+                    <input type="button" value="Login" id="login-input-button">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script> 
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script> 
+<script src="js/plugins.js"></script> 
+<script src="js/main.js"></script> 
+<script src="js/jquery.barousel.js"></script> 
+<script>
+$(function(){
+$('#index-header1').barousel({    
+    navType: 2,
+    fadeInSpeed:800,
+    contentResizeSpeed:1200
+});
+});
+</script> 
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
+<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+</body>
+</html>

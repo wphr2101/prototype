@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="css/index-main.css">
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]--> 
+
+<!-- Add your site or application content here -->
+<div class="main-container">
+    <header>
+    	<nav>
+            <ul id="main-nav">
+                <li><a href="business.html">Business</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a class="active" href="model.html">Model</a></li>
+                <li><a href="signal.html">Signal</a></li>
+                <li><a href="alert.html">Alert</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="filter">
+    	<img src="img/html5_sticker.jpg" style="margin-bottom:15px" />
+        <div class="main-filter">
+            <h3>Filter</h3>
+            <select id="app-filter">
+                <option selected>Apps</option>
+                <option>Customer Service </option>
+                <option>Risk</option>
+                <option>Attrition</option>
+            </select>
+            <select id="model-filter">
+                <option selected>Model</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+            <select id="signal-filter" style="display:none;">
+                <option selected>Signal</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+        </div>
+        <div class="sub-filter">
+            <h3>Sub-Filter</h3>
+            <select id="channel-filter">
+                <option selected>Channel</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+            <select id="provider-filter">
+                <option selected>Provider</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+        </div>
+    </aside>
+    <section class="content-area">
+        <div id="content-tab">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li id="stability-sub-menu"><a href="#stability-tab">Stability</a></li>
+                <li id="performance-sub-menu"><a href="#performance-tab">Performance</a></li>
+                <li><a href="#settings-tab">Settings</a></li>
+            </ul>
+            <div id="overview">
+                <p>The model is usually characterized by performing calculations, and makes recommendations based on that information. The model may also summarize particular events for the end user and provide direction regarding possible actions or alternatives.</p>
+                <p>Business decisions are increasingly made based on a financial model built in around the system.  HMIT incorporated some simple best practice principles in the form of models that can improve the flexibility and reliability of Business value decisions.</p>
+            </div>
+            <div id="stability-tab">
+                <div class="single-column-graph-container">
+                    <h4>Key Statistics</h4>
+                    <div id="key-statistics"></div>
+                </div>
+                <div class="single-column-graph-container">
+                    <h4>PS1 Analysis</h4>
+                    <div id="psi-analysis"></div>
+                </div>
+                <div class="single-column-graph-container">
+                    <h4>Table</h4>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="alert-setting-table">
+                        <tr class="header">
+                            <td class="first">Variable</td>
+                            <td>Signal</td>
+                            <td>Statistics</td>
+                            <td>?????</td>
+                            <td>Jan</td>
+                            <td>Feb</td>
+                            <td>Mar</td>
+                            <td class="last">%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>All</td>
+                            <td>Mean</td>
+                            <td>0.5</td>
+                            <td>0.5</td>
+                            <td>0.3</td>
+                            <td>0.4</td>
+                            <td>-18%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>All</td>
+                            <td>Standard Deviation</td>
+                            <td>0.2</td>
+                            <td>0.23</td>
+                            <td>0.19</td>
+                            <td>0.27</td>
+                            <td>30%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="performance-tab">
+                <div class="two-column-graph-container">
+                    <h4>Performance Trend - 1</h4>
+                    <div id="performance-trend-1"></div>
+                </div>
+                <div class="two-column-graph-container">
+                    <h4>Performance Trend - 2</h4>
+                    <div id="performance-trend-2"></div>
+                </div>
+                <div style="clear:both; margin-bottom:15px;"></div>
+            </div>
+            <div id="settings-tab">
+                <h4>Alerts Thresholds</h4>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="alert-setting-table">
+                    <tr class="header">
+                        <td class="first">Metric</td>
+                        <td>Category</td>
+                        <td>Alert 1</td>
+                        <td>Choice 1</td>
+                        <td>Alert 2</td>
+                        <td>Choice 2</td>
+                        <td class="last">Add+</td>
+                    </tr>
+                    <tr>
+                        <td>Score PSI</td>
+                        <td>Stability</td>
+                        <td>Critical</td>
+                        <td><Select>
+                                <option>&gt;</option>
+                                <option>&lt;</option>
+                            </Select>
+                            <input type="text" value="0.25"></td>
+                        <td>Minor</td>
+                        <td><Select>
+                                <option>&gt;</option>
+                                <option>&lt;</option>
+                            </Select>
+                            <input type="text" value="0.10"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Score Mean Change</td>
+                        <td>Stability</td>
+                        <td>Critical</td>
+                        <td><Select>
+                                <option>&gt;</option>
+                                <option>&lt;</option>
+                            </Select>
+                            <input type="text" value="20%"></td>
+                        <td>Minor</td>
+                        <td><Select>
+                                <option>&gt;</option>
+                                <option>&lt;</option>
+                            </Select>
+                            <input type="text" value="10%"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>KS Drop</td>
+                        <td>Performance</td>
+                        <td>Critical</td>
+                        <td><Select>
+                                <option>&gt;</option>
+                                <option>&lt;</option>
+                            </Select>
+                            <input type="text" value="5%"></td>
+                        <td>Minor</td>
+                        <td><Select>
+                                <option>&gt;</option>
+                                <option>&lt;</option>
+                            </Select>
+                            <input type="text" value="3%"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Gini Drop</td>
+                        <td>Performance</td>
+                        <td>Critical</td>
+                        <td><Select>
+                                <option>&gt;</option>
+                                <option>&lt;</option>
+                            </Select>
+                            <input type="text" value="5%"></td>
+                        <td>Minor</td>
+                        <td><Select>
+                                <option>&gt;</option>
+                                <option>&lt;</option>
+                            </Select>
+                            <input type="text" value="3%"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>ALROC Drop</td>
+                        <td>Performance</td>
+                        <td>Critical</td>
+                        <td><Select>
+                                <option>&gt;</option>
+                                <option>&lt;</option>
+                            </Select>
+                            <input type="text" value="3%"></td>
+                        <td>Minor</td>
+                        <td><Select>
+                                <option>&gt;</option>
+                                <option>&lt;</option>
+                            </Select>
+                            <input type="text" value="2%"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(+ Add/Remove Metric)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div class="content-segment-area">
+                    <h4>Overview Preferences</h4>
+                    <table>
+                        <tr>
+                            <td class="first">Alerts count</td>
+                            <td><input name="overview-preference-radio" type="radio" value="Count Critical and Minor alerts" checked>
+                                <label>Count Critical and Minor alerts</label>
+                                <br>
+                                <input type="radio" value="Count Critical alerts only" name="overview-preference-radio">
+                                <label>Count Critical alerts only</label></td>
+                        </tr>
+                        <tr>
+                            <td class="first">Top Alerts displayed</td>
+                            <td><select style="font-family:Georgia">
+                                    <option selected>Top 5</option>
+                                </select></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content-segment-area-2">
+                    <h4>Stability & Performance Preferences</h4>
+                    <table>
+                        <tr>
+                            <td class="first"># of periods in time series</td>
+                            <td><select style="font-family:Georgia">
+                                    <option selected>Last 3</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td class="first">Show training Value (INS)</td>
+                            <td><input name="Stability-preference-radio" type="radio" value="yes" checked>
+                                <label>Yes</label>
+                                <br>
+                                <input type="radio" value="no" name="Stability-preference-radio">
+                                <label>No</label></td>
+                        </tr>
+                        <tr>
+                            <td class="first">Main Statistics displayed (Stability)</td>
+                            <td><input type="checkbox">
+                                <label>P1</label>
+                                <input type="checkbox">
+                                <label>P5</label>
+                                <input type="checkbox">
+                                <label>P10</label>
+                                <input type="checkbox">
+                                <label>P25</label>
+                                <br>
+                                <input type="checkbox">
+                                <label>P99</label>
+                                <input type="checkbox">
+                                <label>P95</label>
+                                <input type="checkbox">
+                                <label>P90</label>
+                                <input type="checkbox">
+                                <label>P75</label></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script> 
+<script src="http://code.highcharts.com/highcharts.js"></script> 
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script> 
+<script src="js/plugins.js"></script> 
+<script src="js/index-main.js"></script> 
+<script>
+$(function(){
+
+});
+</script> 
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
+<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+</body>
+</html>

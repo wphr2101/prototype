@@ -1,0 +1,326 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	min-height: 100%;
+}
+a, .ui-widget-content a{
+	text-decoration:none;
+	color:#0771D7;
+}
+a:hover, .ui-widget-content a:hover{
+	text-decoration:underline;
+}
+.main-container{
+	opacity:0;
+	margin:0px auto;
+	width:1024px;
+	padding-bottom:60px;
+	overflow:auto;
+/*	border-left:1px solid #EEE;
+	border-right:1px solid #EEE;*/
+	min-height:100%;
+}
+ul#main-nav{
+	padding:0px;
+	margin:40px 0px;
+	float:left;
+
+}
+ul#main-nav li{
+	float:left;
+	/*padding:5px 82px;
+	background-color:#EDEFED;
+	color:#333333;*/
+	margin-right:1px;
+	cursor:pointer;
+
+
+}
+
+/*ul#main-nav li.active, ul#main-nav li.active:hover{
+	background-color:#0771D7;
+	color:#FFF;
+}*/
+ul#main-nav li a{
+	padding:10px 67px;
+	border:1px solid #0000FF;
+	border-radius:12px;
+	font-family:Georgia;
+	font-size:14px;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(top, rgba(0,0,125,0.1) 0%, rgba(0,0,255,0.5) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,125,0.1)), color-stop(100%,rgba(0,0,255,0.5))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(0,0,125,0.1) 0%, rgba(0,0,255,0.5) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(0,0,125,0.1) 0%, rgba(0,0,255,0.5) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(0,0,125,0.1) 0%, rgba(0,0,255,0.5) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#80000000',GradientType=0 ); /* IE6-8 */
+background: linear-gradient(to bottom, rgba(0,0,125,0.1) 0%, rgba(0,0,255,0.5) 100%); /* W3C */
+	color:#dd4422;
+	text-decoration:none;
+	color:#FF6600;
+}
+ul#main-nav li:nth-child(5) a{
+	padding:10px 65px;
+}
+ul#main-nav li:nth-child(5) a:hover{
+	padding:14px 65px;
+}
+ul#main-nav li a:hover{
+	background-color:#0000FF;
+	padding:14px 67px;
+}
+ul#main-nav li a.active, ul#main-nav li a.active:hover{
+	background-color:#0000FF;
+	border:1px solid #0000FF;
+	border-radius:12px;
+	color:#FF6600;
+	padding:14px 72px;
+}
+ul#main-nav li:nth-child(5) a.active, ul#main-nav li:nth-child(5) a.active:hover{
+	padding:14px 65px;
+}
+/* code for content area starts here*/
+.content-area{
+	float:left;
+	width:793px;
+	margin:0px 10px;
+	height:100%;
+}
+.content-area p{
+	font-size:90%;
+	margin:0px 0px 15px;
+}
+/* code for content area ends here*/
+/* code for fiter area starts here*/
+.filter{
+	float:left;
+	width:200px;
+	margin-left:10px;
+}
+.main-filter{
+border:1px solid #D4D4D4;
+margin-bottom:20px;
+padding-bottom:10px;
+}
+.sub-filter{
+border:1px solid #D4D4D4;
+padding-bottom:10px;
+}
+.filter h3{
+	height:15px;
+	padding:5px 5px;
+	margin:0px;
+	background-color:#D4D4D4;
+	font-size:90%;
+	line-height:15px;
+	margin-bottom:10px;
+}
+.filter select{
+	margin:5px;
+	font-size:85%;
+	width:95%;
+	/*text-align:center;*/
+}
+/* code for filter area ends here*/
+/* code for footer area starts here*/
+footer{
+	clear:both;
+	height:30px;
+	background: url(../img/bg_barousel_content.png) repeat 0 0;
+	display:block;
+	width:1024px;
+	position:fixed;
+	bottom:0px;
+}
+/* code for footer area ends here*/
+/* code for content aside starts here */
+.content-aside-right{
+	width:43%;
+	margin-left:25px;
+	float:left;
+	border:1px solid #CCC;
+	background-color:#EEEEEE;
+	border-radius:5px;
+	padding:10px;
+}
+.clear-both{
+	clear:both;
+}
+/* code for content aside ends here */
+/* code for alert settings starts here*/
+.alert-setting-table{
+	font-size:85%;
+}
+.alert-setting-table tr.header{
+	background-color:#CCC;
+	height:20px;
+}
+.alert-setting-table tr.header td{
+	padding:5px 10px;
+	font-weight:bold;
+	border:1px solid #EEE;
+}
+.alert-setting-table tr.header td.first{
+	border-left:1px solid #CCC;
+}
+.alert-setting-table tr.header td.last{
+	border-right:1px solid #CCC;
+}
+
+.alert-setting-table tr:nth-child(even){
+	background-color:#EEE;
+}
+
+.alert-setting-table td{
+	border:1px solid #CCC;
+	padding:5px 10px;
+}
+.alert-setting-table input{
+	width:40px;
+}
+.content-segment-area, .content-segment-area-2{
+	border:1px solid #CCC;
+	border-radius:10px;
+	padding:15px;
+	margin:20px;
+}
+.content-segment-area h4, .content-segment-area-2 h4{
+	margin:0px;
+	padding:0px;
+}
+.content-segment-area label{
+	margin-left:5px;
+	vertical-align:text-bottom;
+}
+.content-segment-area table{
+	margin-top:20px;
+	margin-left:70px;
+}
+.content-segment-area table tr td.first{
+	width:170px;
+	height:50px;
+}
+
+.content-segment-area-2 label{
+	margin-left:5px;
+	vertical-align:text-bottom;
+	width:40px;
+	display:inline-block;
+}
+.content-segment-area-2 table{
+	margin-top:20px;
+	margin-left:70px;
+}
+.content-segment-area-2 table tr td.first{
+	width:280px;
+	height:50px;
+}
+/* code for alert settings ends here*/
+.overview-2-column{
+	float:left;
+	margin-right:20px;
+	width:366px;
+}
+.overview-2-column.last{
+	margin-right:0px;
+}
+.overview-2-column-content-wrapper{
+	border:1px solid #CCC;
+	border-radius:10px;
+	padding:10px;
+	margin-bottom:15px;
+}
+.signals-ov-label{
+	width:135px;
+	display:inline-block;
+	padding:4px 0px;
+	margin-left:15px;
+}
+.signals-ov-link{
+	display:inline-block;
+	padding:4px 0px;
+	margin-left:15px;
+}
+signals-ov-copy{
+	
+}
+/* code for accordian starts here */
+.overview-3-column{
+	float:left;
+	margin-right:14px;
+	width:218px;
+	/*background-color:#EEE;*/
+	border:1px solid #CCC;
+	border-radius:10px;
+	padding:10px;
+}
+.overview-3-column.last{
+	margin-right:0px;
+}
+.overview-3-column h4, .overview-2-column h4{
+	margin:0px 0px 10px;
+}
+.index-content-accordion{
+	width:100%;
+}
+.index-content-accordion h3 span{
+	color:#F00;
+	float:right;
+	margin-right:10px;
+}
+.ui-accordion .ui-accordion-content{
+	padding: 10px 5px;
+	border:1px solid #CCC;
+	border-top:none;
+	margin-bottom:5px;
+}
+/* code for accordian ends here */
+/* customization of Tab widget starts here */
+.ui-widget-content{
+	border:none;
+}
+.ui-tabs{
+	padding:0px;
+	border:1px solid #CCCCCC;
+	border-top:none;
+}
+.ui-widget{
+	font-size:85%;
+}
+/* customization of Tab widget ends here */
+/* styles for high charts container starts here */
+.single-column-graph-container{
+	border:1px solid #CCC;
+	border-radius:10px;
+	padding:10px;
+	margin-bottom:25px;
+}
+.single-column-graph-container h4, three-column-graph-container h4{
+	margin:0px 0px 10px;
+}
+.three-column-graph-container{
+	border:1px solid #CCC;
+	border-radius:10px;
+	padding:10px;
+	margin:0px 15px 25px 0px;
+	width:218px;
+	float:left;
+}
+.three-column-graph-container:nth-child(3){
+	margin-right:0px;
+}
+.two-column-graph-container{
+	border:1px solid #CCC;
+	border-radius:10px;
+	padding:10px;
+	margin:0px 15px 25px 0px;
+	width:339px;
+	float:left;
+}
+
+/* styles for high charts container ends here */
+.option-alert{
+	float:right;
+	color:#F00;
+}

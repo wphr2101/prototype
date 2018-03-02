@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="css/index-main.css">
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]--> 
+
+<!-- Add your site or application content here -->
+<div class="main-container">
+    <header>
+    	<nav>
+            <ul id="main-nav">
+                <li><a href="business.html">Business</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="model.html">Model</a></li>
+                <li><a href="signal.html">Signal</a></li>
+                <li><a class="active" href="alert.html">Alert</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="filter">
+    	<img src="img/html5_sticker.jpg" style="margin-bottom:15px" />
+        <div class="main-filter">
+            <h3>Filter</h3>
+            <select id="app-filter">
+                <option selected>Apps</option>
+                <option>Customer Service </option>
+                <option>Risk</option>
+                <option>Attrition</option>
+            </select>
+            <select id="model-filter">
+                <option selected>Model</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+            <select id="alert-signal-filter" style="display:none;">
+                <option selected>Select Signal</option>
+                <option>All (19 alerts)</option>
+                <option>Signal 1 (6 alerts)</option>
+                <option>Signal 10 (5 alerts)</option>
+                <option>Signal 3 (4 alerts)</option>
+                <option>Signal 7 (4 alerts)</option>
+            </select>
+            <select id="alert-data-filter" style="display:none;">
+                <option selected>Select Dataset</option>
+                <option>All (9 alerts)</option>
+                <option>Dataset 1 (3 alerts)</option>
+                <option>Dataset 2 (4 alerts)</option>
+                <option>Dataset 3 (2 alerts)</option>
+            </select>
+        </div>
+        <div class="sub-filter" style="display:none;">
+            <h3>Sub-Filter</h3>
+            <select id="channel-filter">
+                <option selected>Channel</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+            <select id="provider-filter">
+                <option selected>Provider</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+        </div>
+    </aside>
+    <section class="content-area">
+        <div id="content-tab">
+            <ul>
+                <li id="alert-overview-tab"><a href="#alert-overview">Overview</a></li>
+                <li id="alert-model-app-signal-tab"><a href="#alert-model-app-signal">Model-App Signal</a></li>
+                <li id="alert-raw-data-tab"><a href="#alert-raw-data">Raw Data</a></li>
+                <li id="alert-settings-tab"><a href="#alert-settings">Settings</a></li>
+            </ul>
+            <div id="alert-overview">
+                <p>Alerts in the Signal Hub application used a methodological decision analysis in four aspects including decision problems, decision makers, decision environments, and decision approaches.</p>
+                <p>To examine the right resolution for the alert w.r.t the criticality, response time, resolution time, etc. the alert techniques are working from three perspectives: (1) Multi-criteria decision making techniques (2) Mathematical programming techniques and (3) Artificial intelligence techniques. </p>
+                <p>Alerts functionality will use these techniques and analysed the means of integrating these techniques for a right resolution (or) options of resolution based on the alerts.</p>
+            </div>
+            <div id="alert-model-app-signal">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="alert-setting-table">
+                    <tr class="header">
+                        <td class="first">Alert ID</td>
+                        <td>Criticality</td>
+                        <td>Description</td>
+                        <td>Comment</td>
+                        <td class="last">More Info</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>High</td>
+                        <td>Signal 1 has very high PSI (0.38)</td>
+                        <td>No issue with underlying variable was identified. High PSI due to change in population behavior.<br>
+                            <a href="#">+ Add Comment</a><a href="#" style="float:right;">+ See all Comments</a></td>
+                        <td><a href="#">See signal Quality</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="alert-raw-data">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="alert-setting-table">
+                    <tr class="header">
+                        <td class="first">Alert ID</td>
+                        <td>Criticality</td>
+                        <td>Comment</td>
+                        <td class="last">More Info</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>High</td>
+                        <td>Records ID were sent to client for resend on 3/19/2013.<br>
+                            <a href="#">+ Add Comment</a><a href="#" style="float:right;">+ See all Comments</a></td>
+                        <td><a href="#">See Erroneous Records</a></td>
+                    </tr>
+                    <tr>
+                        <td>124</td>
+                        <td>High</td>
+                        <td>Check confirmed data are correct. Simply need to update file name.<br>
+                            <a href="#">+ Add Comment</a><a href="#"  style="float:right;">+ See all Comments</a></td>
+                        <td><a href="#">See Row Data Quality</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="alert-settings">
+                <p>The Settings feature of Signal Hub makes it easy to create, store, and maintain customised parameters and user preferences. A setting addresses both needs by providing an easy way to store both customised parameters and user preferences on the Signal Hub.</p>
+                <p>Settings have no built-in facility for encrypting information automatically. You should never store security-related information, such as database passwords, in clear text. If you want to store such sensitive information, based on the request it will be customised to make sure it is secure.</p>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script> 
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script> 
+<script src="js/plugins.js"></script> 
+<script src="js/index-main.js"></script> 
+<script>
+$(function(){
+
+});
+</script> 
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
+<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+</body>
+</html>

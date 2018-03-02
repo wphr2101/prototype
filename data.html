@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="css/index-main.css">
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]--> 
+
+<!-- Add your site or application content here -->
+<div class="main-container">
+    <header>
+        <nav>
+            <ul id="main-nav">
+                <li><a href="business.html">Business</a></li>
+                <li><a class="active" href="data.html">Data</a></li>
+                <li><a href="model.html">Model</a></li>
+                <li><a href="signal.html">Signal</a></li>
+                <li><a href="alert.html">Alert</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="filter">
+    	<img src="img/html5_sticker.jpg" style="margin-bottom:15px" />
+        <div class="main-filter">
+            <h3>Filter</h3>
+            <select id="app-filter">
+                <option selected style="font-weight:bold; color:red;">Apps</option>
+                <option>Customer Service </option>
+                <option>Risk</option>
+                <option>Attrition</option>
+            </select>
+            <select id="model-filter">
+                <option selected>Model</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+            <select id="signal-filter">
+                <option selected>Signal</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+            <select id="alert-data-filter" style="display:none;">
+                <option selected>Select Dataset</option>
+                <option>All (9 alerts)</option>
+                <option>Dataset 1 (3 alerts)</option>
+                <option>Dataset 2 (4 alerts)</option>
+                <option>Dataset 3 (2 alerts)</option>
+            </select>
+            <select id="alert-field-filter" style="display:none;">
+                <option selected>Select Fieldset</option>
+                <option>All (11 alerts)</option>
+                <option>Fieldset 1 (6 alerts)</option>
+                <option>Fieldset 2 (5 alerts)</option>
+            </select>
+        </div>
+        <div class="sub-filter" style="display:none;">
+            <h3>Sub-Filter</h3>
+            <select id="data-subset-filter" style="display:none;">
+                <option selected>Select Subset</option>
+                <option>Scoring</option>
+                <option>Raw</option>
+            </select>
+            <select id="channel-filter" style="display:none;">
+                <option selected>Channel</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+            <select id="provider-filter" style="display:none;">
+                <option selected>Provider</option>
+                <option>Lorem</option>
+                <option>Ipsum</option>
+            </select>
+        </div>
+    </aside>
+    <section class="content-area">
+        <div id="content-tab">
+            <ul>
+                <li id="ov-data-tab"><a href="#ov-data">Overview</a></li>
+                <li id="raw-data-quality-tab"><a href="#raw-data-quality">Raw Data Quality</a></li>
+                <li id="raw-data-trend-tab"><a href="#raw-data-trend">Raw Data Trend</a></li>
+                <li id="api-data-trend-tab"><a href="#api-data-trend">API Data Trend</a></li>
+                <li id="data-settings-tab"><a href="#data-settings">Settings</a></li>
+            </ul>
+            <div id="ov-data">
+                <p>Data functionality is the initial phase of the Signal Hub application starting process. Data process life cycle functionality is to do the collected data are verified and validated. The verification and validation process ensures that the data were collected according to specifications given in the signal hub application engine and that they are appropriate and consistent with their intended use.</p>
+                <p>Data verification is a systematic process for evaluating performance and compliance of a set of data when compared to a set of standards to ascertain the data’s completeness, correctness, and consistency using methods and criteria defined in the signal hub application. </p>
+                <p>Data validation follows the data verification process and uses information from the previous process to ascertain the usability of the data in light of their pre-determined measurement quality objectives and to ensure that results obtained are scientifically defensible.</p>
+            </div>
+            <div id="raw-data-quality">
+                <div class="overview-2-column">
+                    <div class="overview-2-column-content-wrapper">
+                        <h4>Dataset Summary</h4>
+                        <label class="signals-ov-label">Name:</label>
+                        <span class="signals-ov-copy">Dataset 1</span><br>
+                        <label class="signals-ov-label">Description:</label>
+                        <span class="signals-ov-copy">Monthly transaction data</span><br>
+                        <label class="signals-ov-label">Type:</label>
+                        <span class="signals-ov-copy">CSV</span><br>
+                        <label class="signals-ov-label">Size:</label>
+                        <span class="signals-ov-copy">2.45GB</span><br>
+                        <label class="signals-ov-label"># records:</label>
+                        <span class="signals-ov-copy">5M</span><br>
+                        <label class="signals-ov-label"># attributes:</label>
+                        <span class="signals-ov-copy">110</span><br>
+                        <label class="signals-ov-label">Header:</label>
+                        <span class="signals-ov-copy">Yes</span><br>
+                        <hr>
+                        <label class="signals-ov-label">Status:</label>
+                        <span class="signals-ov-copy">File not processed</span><br>
+                        <a class="signals-ov-link" href="#" target="_self">View data dictionary</a> </div>
+                </div>
+                <div class="overview-2-column last">
+                    <div class="overview-2-column-content-wrapper">
+                        <h4>Data Quality Alert</h4>
+                        <div id="signal-ov-alert" class="index-content-accordion">
+                            <h3>File Level Alerts<span>4 alerts</span></h3>
+                            <div> <a href="#">
+                                <label class="signals-ov-label">File Name:</label>
+                                <span class="signals-ov-copy">wrong prefix</span></a><br>
+                                <a href="#">
+                                <label class="signals-ov-label">Type:</label>
+                                <span class="signals-ov-copy">wrong extension</span></a><br>
+                                <a href="#">
+                                <label class="signals-ov-label">Record Count:</label>
+                                <span class="signals-ov-copy">90% of Exp</span></a><br>
+                                <a href="#">
+                                <label class="signals-ov-label">unexpected Fields:</label>
+                                <span class="signals-ov-copy">10 less</span></a><br>
+                            </div>
+                            <h3>Record Level<span>0 alert</span></h3>
+                            <div>
+                                <p> </p>
+                            </div>
+                            <h3>Field Level<span>0 alert</span></h3>
+                            <div>
+                                <p> </p>
+                            </div>
+                            <h3>Meta Level<span>0 alert</span></h3>
+                            <div>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both; margin-bottom:15px;"></div>
+                <div style="clear:both;"></div>
+            </div>
+            <div id="raw-data-trend">
+                <p></p>
+            </div>
+            <div id="api-data-trend">
+                <p></p>
+            </div>
+            <div id="data-settings">
+                <p>The Settings feature of Signal Hub makes it easy to create, store, and maintain customised parameters and user preferences. A setting addresses both needs by providing an easy way to store both customised parameters and user preferences on the Signal Hub.</p>
+                <p>Settings have no built-in facility for encrypting information automatically. You should never store security-related information, such as database passwords, in clear text. If you want to store such sensitive information, based on the request it will be customised to make sure it is secure.</p>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script> 
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script> 
+<script src="js/plugins.js"></script> 
+<script src="js/index-main.js"></script> 
+<script>
+$(function(){
+
+});
+</script> 
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
+<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+</body>
+</html>
